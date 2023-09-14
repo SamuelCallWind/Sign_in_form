@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage.textContent = 'The passwords don\'t match';
         }
     });
+
+    document.querySelector('.submit').addEventListener('click', function (event) {
+        let allInputs = Array.from(document.querySelectorAll('input'));
+        allInputs.forEach(element => element.classList.add('touch'));
+    });
 });
 
 

@@ -116,19 +116,20 @@ form > * > input {
     align-self: center;
     height: 1.5rem;
     margin-top: 1%;
+    border: rgba(224, 224, 224, 0.383) solid 1px;
 }
 
 input:valid {
-    border: green;
+    border: green solid 1px;
 }
-input:invalid {
-    border: red;
+input.touch:invalid {
+    border: red solid 1px;
 }
 .submit {
     width: 15%;
     height: 5vh;
     margin: 5%;
-    background: linear-gradient(green, rgba(0, 128, 0, 0.731));
+    background: linear-gradient(rgb(99, 101, 99), rgba(158, 143, 121, 0.731));
     color: white;
     border-radius: 5px;
     box-shadow: black 2px 2px 5px;
