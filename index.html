@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="entireFormPageContainer">
+        <section class="pictureSide">
+            <img src="images/Mountains.jpg" id="mountains" alt="Mountains of Switzerland" >
+            <div class="logoContainer">
+                <img src="images/Logo-Odin.png">
+                <p class="textLogo">ODIN</p>
+            </div>
+        </section>
+    
+        <section class="textSide">
+            <section class="firstText">
+                <p class="textService">
+                    This is not a real onlince Service! You know you need something
+                    like this in your life to help you realize your deepest dreams. Sign up now to get started
+                    <br>You know you want to.
+                </p>
+            </section>
+            <section class="formContainer">
+                <form class="formLogin" method="post" action="">
+                    <p>Let's do this !</p>
+                    <div class="pair">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="pair">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="pair">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="pair">
+                        <label for="tel">Telephone Number</label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="pair">
+                        <label for="passwordForm">Password</label>
+                        <input type="password" id="passwordForm" name="password" required minlength="6">
+                    </div>
+                    <div class="pair">
+                        <label for="repeatPassword">Repeat Password</label>
+                        <input type="password" id="repeatPassword" name="repeatPassword" required>
+                        <span class="errorMessage"></span>
+                    </div>
+
+                    <button type="submit" class="submit" >Submit</button>
+                </form>
+            </section>
+            <section class="thirdPart">
+            </section>
+        </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
